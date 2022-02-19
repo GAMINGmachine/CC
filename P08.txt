@@ -1,0 +1,8 @@
+AWX Ansible:https://172.16.11.239/#/login[User:admin,Pass:pdacse]
+KVM Cockpit:https://172.16.0.6:9090/[User:root,Pass:pdacse]
+Step 1: Log In to AWX and Go to Job Templates.
+Step 2: Click on the Desired VM Creation Template & Launch it, by clicking on the Rocket Icon.
+Step 3: Now provide the inputs for VM and Launch it.
+Step 4: Login to KVM Cockpit or ssh into the KVM [ssh -X root@172.16.0.6 and run the command virt-manager(Pass:pdacse)]
+Step 5: Open Console & direct the installation wrt the OS Flavour.
+Step 6: Once Done Reboot & ssh into it via the IP Captured or Capture the IP from the console using the command line (ip a). Alternatively can use the console too as desired.

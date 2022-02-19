@@ -1,0 +1,30 @@
+http://<OPENSTACK_NODE_IP>/dashboard
+Part 1: Enabling SSH on default security group
+Step 1: Log on to openstack dashboard as admin user.
+Step 2: Click on “Project” tab in the left side navigation panel and then open “Access & Security” under the heading “Manage Compute” as indicated in the image.
+Step 3: In the “Access & Security” page, under the “Security Groups” heading click on “Edit Rules” button corresponding to the “default” security group. A new page similar to below will be opened.
+Step 4: In this page click on “Add Rule” button, a new dialog will be opened.
+Step 5: In “Add Rule” dialog enter number “22” (which is the default port number for SSH) and then click “Add” as shown in below image.
+Step 6: Verify the new rule is displayed under “Security Group Rules”
+
+Part 2: Creating a new key pair
+Step 1: In the OpenStack dashboard, click on “Access & Security” in the left navigation menu. “Access & Security” page will be opened.
+Step 2: In this new page, click on “Keypairs” tab.
+Step 3: Click on “Create Keypair” button, a new dialog will be opened.
+Step 4: In the new dialog that is opened, enter a name for keypair (you can enter your name) and then click on “Create Keypair” button.
+Step 5: After clicking “Create Keypair”, the dialog will be closed, a new keypair will be generated and option will be given to download it. Download the key pair. If the download is not started automatically, then click on “Download keypair…” link and download the keypair.
+
+Part 3: Adding a new image
+Step 1: Login to Openstack dashboard and on the left side navigation menu, click on “Images & Snapshots” under the heading “Manage Compute”.
+Step 2: In the “Images & Snapshots” page, click on “Create Image” button as indicated above. A new dialog will be opened.
+Step 3: In “Create An Image” dialog that is opened, enter appropriate details as indicated below. Provide a name for the image under “Name” field. Image location: https://cloud.centos.org/centos/7/images/ Under the “Format” dropdown box, make sure to choose the appropriate format of the image. In this case “QCOW2 – QEMU Emulator” has to be chosen.
+Step 4: Click “Create Image” button after filling all the necessary details of the image.
+Step 5: Verify a new image is created and is displayed under “Images & Snapshots” page. Note that the “Status” of the image will change from Queued -> Saving -> Active. Status has to be “Active” for the image to be used.
+
+Part 4: Launching an instance
+Step 1: Click on the “Launch” button corresponding to the image created. A new dialog will be opened.
+Step 2: Fill the details under “Details” tab of “Launch Instance” dialog. Provide a name in the “Instance Name” field, select appropriate “Flavor” and Instance Count”.
+Step 3: Move to “Access & Security” tab and make sure appropriate Keypair that was created in Part 2 of this exercise is selected.
+Step 4: In the “Networking” make sure the default public network is selected.
+Step 5: Leave “Volume Options” and “Post-Creation” sections as is and click on Launch.
+Step 6: In the “Instances” page verify that new instance is listed.

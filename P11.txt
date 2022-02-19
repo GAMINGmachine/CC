@@ -1,0 +1,9 @@
+AWX Ansible:https://172.16.11.239/#/login[User:admin,Pass:pdacse]
+KVM Cockpit:https://172.16.0.6:9090/[User:root,Pass:pdacse]
+Step 1: Log In to AWX and Go to Job Templates.
+Step 2: Click on the Desired VM Creation Template.
+Step 3: Now provide the inputs for VM and Launch it.
+Step 4: Login to KVM Cockpit or ssh into the KVM [ssh -X root@172.16.0.6 and run.
+Step 5: Enter the command virsh list.
+Step 6: Enter the command virsh console VM name(select VM name from the list).
+Step 7: To get the ip address enter the command ip a.

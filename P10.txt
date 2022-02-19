@@ -1,0 +1,7 @@
+Step 1: Open terminal in system.
+Step 2: Enter the command ssh -X root@172.16.0.6 and run.
+Step 3: Enter the command virt-manager.
+Step 4: Shutdown the VM to be cloned in the KVM console.
+Step 5: Right click on the VM panel & click on clone.
+Step 6: Tn the clone VM enter the name & click on clone.
+Step 7: Once Cloning is complete you can rename the Clone as desired and IPs are auto attached so can be fetched via Console as previously mentioned.
